@@ -35,7 +35,7 @@ public class b_construtor_treino02 {
 	@Override
 	public String toString() {
 		return "\nNome=" + nome + "\nEmail=" + email + "\nEndereco=" + endereco + "\nTelefone="
-				+ Arrays.toString(telefone) + "]";
+				+ Arrays.toString(telefone);
 	}
 	
 	
