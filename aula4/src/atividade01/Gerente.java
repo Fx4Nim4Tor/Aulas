@@ -17,7 +17,7 @@ public class Gerente extends Funcionario {
 
 	@Override
 	public String toString() {
-		return "Funcionarios: " + Arrays.toString(numeroFuncionarios) + "\nnome Gerente: " + getNome()
+		return " Funcionarios: " + Arrays.toString(numeroFuncionarios) + "\nnome Gerente: " + getNome()
 				+ " \nEmail Gerente: " + getEmail() + " \nTelefone Gerente: " + getTelefone() + " \nSetor Gerente: " + getSetor()
 				+ " \n Salario Gerente: " + getSalario() ;
 	}
