@@ -23,7 +23,7 @@ public abstract class Animal {
 
 	@Override
 	public String toString() {
-		return "\nAnimal: \nNome=" + nome + "\nComprimento: " + comprimento + "\nNumeroDEpatas: " + numeroDEpatas + "\nCor: "
+		return "\n//////Animal////// \nNome=" + nome + "\nComprimento: " + comprimento + "\nNumeroDEpatas: " + numeroDEpatas + "\nCor: "
 				+ cor + "\nAmbiente: " + ambiente + "\nVelocidade: " + velocidade +  "\n//////////////////\n";
 	}
 

@@ -1,6 +1,5 @@
 package atividade2;
 
-import java.util.Scanner;
 
 public class PessoaFisica extends Contribuintes{
 	private String CPF;
@@ -17,19 +16,28 @@ public class PessoaFisica extends Contribuintes{
 	
 
 	public void imposto(){
-		Scanner teclado = new Scanner(System.in);
-		System.out.println("IRPF");
-		double IRPF = teclado.nextDouble();
-		
+		double IRPF = 0;
 		
 		if(this.salario < 1903.98){
 			System.out.println("POBRE");
 		}else if(this.salario < 2826.65){
-			this.salario -= (this.salario * 0.075 - IRPF);
+			IRPF = (this.salario * 0.075);
+			this.salario = this.salario - IRPF;
+			System.out.println("O valor do IRPF retirado do seu salario é de: " + IRPF + "\nSeu salario ficou de: " + this.salario);
+			
+			
 		}else if(this.salario < 3751.05){
-			this.salario -= (this.salario * 0.015 - IRPF);
+			IRPF = (this.salario * 0.15);
+			this.salario = this.salario - IRPF;
+			System.out.println("O valor do IRPF retirado do seu salario é de: " + IRPF + "\nSeu salario ficou de: " + this.salario);
+			
+			
 		}else if(this.salario < 4664.68){
-			this.salario -= (this.salario * 0.0)
+			IRPF = (this.salario * 0.225);
+			this.salario = this.salario - IRPF; 
+			System.out.println("O valor do IRPF retirado do seu salario é de: " + IRPF + "\nSeu salario ficou de: " + this.salario);
+			
+			
 		}else{
 			
 		}
