@@ -12,5 +12,6 @@ public class StringRepeat {
 		for(int i = 0;i < n; i++){
 			return palavra;
 		}
+		return palavra;
 	}
 }
